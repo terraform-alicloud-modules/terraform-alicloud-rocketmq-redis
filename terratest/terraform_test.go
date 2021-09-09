@@ -21,8 +21,7 @@ func TestTerraformBasicExampleNew(t *testing.T) {
 		TerraformDir: "../example/",
 
 		// Variables to pass to our Terraform code using -var options
-		Vars: map[string]interface{}{
-		},
+		Vars: map[string]interface{}{},
 
 		// Disable colors in Terraform commands, so it's easier to parse stdout/stderr
 		NoColor: true,

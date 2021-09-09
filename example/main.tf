@@ -17,6 +17,6 @@ resource "alicloud_vswitch" "default" {
 
 
 module "example" {
-  source             = "../"
-  vswitch_id         = alicloud_vswitch.default.id
+  source     = "../"
+  vswitch_id = alicloud_vswitch.default.id
 }
