@@ -1,11 +1,11 @@
-Terraform module which creates rocketMQ and redis instance on Alibaba Cloud
+Terraform module which creates RocketMQ and Redis instance on Alibaba Cloud
 
 terraform-alicloud-rocketmq-redis
 ---
 
 [English](README.md) | 简体中文
 
-该模块用于创建一个阿里巴巴云rocketMQ实例和一个redis实例。
+该模块用于创建一个阿里巴巴云 `RocketMQ` 实例和一个 `Redis` 实例。
 
 本 Module 支持创建以下资源:
 
@@ -16,7 +16,7 @@ terraform-alicloud-rocketmq-redis
 
 ```hcl
 module "example" {
-  source            = "terraform-alicloud-modules/rocketmq-redis/alicloud"
+  source = "terraform-alicloud-modules/rocketmq-redis/alicloud"
 }
 ```
 

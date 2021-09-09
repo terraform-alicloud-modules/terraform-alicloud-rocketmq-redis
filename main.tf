@@ -1,7 +1,6 @@
-
 resource "alicloud_ons_instance" "default" {
   instance_name = var.ons_instance_name
-  remark = var.ons_instance_remark
+  remark        = var.ons_instance_remark
 }
 
 resource "alicloud_ons_topic" "default" {
@@ -17,13 +16,12 @@ resource "alicloud_kvstore_instance" "default" {
   security_ips     = var.security_ips
   instance_type    = var.redis_instance_type
   engine_version   = var.redis_engine_version
-  config = {
-    appendonly = var.redis_appendonly
+  config           = {
+    appendonly             = var.redis_appendonly
     lazyfree-lazy-eviction = var.redis_lazyfree-lazy-eviction
   }
-  tags = {
-    Created = var.redis_tags_created,
-    For = var.redis_tags_for,
+  tags             = {
+    Created = var.redis_tags_created,For = var.redis_tags_for,
   }
   zone_id          = var.zone_id
   instance_class   = var.redis_instance_class

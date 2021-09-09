@@ -7,7 +7,7 @@ variable "ons_instance_name" {
 variable "topic" {
   description = "The specification of ons topic name."
   type        = string
-  default = "onsTopicName1"
+  default     = "onsTopicName1"
 }
 
 variable "ons_instance_remark" {
